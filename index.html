@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+	  <title>Match-Match Game</title>
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/style.css">      
+      <link rel="shortcut icon" href="img/icons/favicon.png" type="image/png">
+   </head>
+   <body>
+      <main>
+         <h1>Match-Match Game</h1>
+         <section class="rules" id="rules">
+            <p>Memory is a counter game where the object is to find pairs</p>
+            <p>When the game begins, all pictures are hidden</p>
+            <h2>To play</h2>
+            <p>1. Select two cards to try to match the pictures</p>
+            <p>2. If you match the pictures you can go again.</p>
+            <p>3. If they don't match it is the computer turn them.</p>
+            <p>4. The player that finds all pairs wins!</p>
+            <p>5. Have fun!</p>
+            <h2>Choose level:</h2>
+            <div class="levels" id="levels">
+               <button class="level chosen-level" id="easy-level">Easy</button>
+               <button class="level" id="medium-level">Medium</button>
+               <button class="level" id="hard-level">Hard</button>
+            </div>
+            <h2>Choose background:</h2>
+            <div class="backgrounds">
+               <div class="background chosen-background" id="background1"><img src="img/backgrounds/background1.jpg" alt="background1"></div>
+               <div class="background" id="background2"><img src="img/backgrounds/background2.jpg" alt="background1"></div>
+               <div class="background" id="background3"><img src="img/backgrounds/background3.jpg" alt="background1"></div>
+               <div class="background" id="background4"><img src="img/backgrounds/background4.jpg" alt="background1"></div>
+               <div class="background" id="background5"><img src="img/backgrounds/background5.jpg" alt="background1"></div>
+               <div class="background" id="background6"><img src="img/backgrounds/background6.jpg" alt="background1"></div>
+            </div>
+            <h2>Ready for start?</h2>
+            <button class="start" id="start">Start</button>
+         </section>
+         <section class="status hidden" id="status">
+            <div class="move">Steps: <span id="stepCounter">0</span></div>
+            <div class="timer">Timer: <span id="hours">00:</span><span id="minutes">00:</span><span id="seconds">00</span></div>
+         </section>
+         <section class="game clearfix" id="game">
+         </section>
+         <section class="result" id="result">
+            <p class="winner">You Win!</p>
+            <p>You managed for <span id="stepTotal"></span> steps</p>
+            <button class="restart" id="restart">Play Again?</button>
+         </section>
+      </main>
+      <footer>
+         <p class="message">Developed by <a href="https://www.facebook.com/roman.yablonski" target="_blank">Roman Yablonski</a></p>
+      </footer>
+      <script src="scripts/match-game.js"></script>
+   </body>
+</html>
